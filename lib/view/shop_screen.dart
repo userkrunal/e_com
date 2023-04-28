@@ -59,13 +59,32 @@ class _Shop_ScreenState extends State<Shop_Screen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      ElevatedButton(onPressed: () {
+                      InkWell(
+                        onTap: () {
                           providerF!.cartList.add(providerF!.productList[i]);
-                      }, child: Text("Add To Cart",style: TextStyle(fontSize: 20))),
+                        },
+                        child: Container(
+                          height: 50,
+                          width: 150,
+                          decoration: BoxDecoration(color: Colors.orange,borderRadius: BorderRadius.circular(20)),
+                          child: Center(child: Text("Add To Cart",style: TextStyle(fontSize: 20))),
+                        ),
+                      ),
                       SizedBox(width: 20),
-                      ElevatedButton(onPressed: () {
+                      InkWell(
+                        onTap: () {
 
-                      }, child: Text("Buy",style: TextStyle(fontSize: 20)))
+                        },
+                        child: Container(
+                          height: 50,
+                          width: 70,
+                          decoration: BoxDecoration(color: Colors.red,borderRadius: BorderRadius.circular(20)),
+                          child: Center(child: Text("Buy",style: TextStyle(fontSize: 20))),
+                        ),
+                      ),
+                      // ElevatedButton(onPressed: () {
+                      //
+                      // }, child: Text("Buy",style: TextStyle(fontSize: 20)))
                     ],
                   ),
                   SizedBox(height: 10),

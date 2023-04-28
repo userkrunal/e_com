@@ -19,7 +19,7 @@ class _ProductScreenState extends State<ProductScreen> {
     return SafeArea(child: Scaffold(
     backgroundColor: Colors.grey.shade200,
       appBar: AppBar(title: Text("Explore Plus ➕"),centerTitle: true,
-        leading: Center(child: Text("Login",style: TextStyle(fontSize: 15),)),
+        leading: Center(child: Text("Login",style: TextStyle(fontSize: 15))),
         actions: [
           IconButton(onPressed: () {
             Navigator.pushNamed(context, 'cart');
@@ -31,7 +31,7 @@ class _ProductScreenState extends State<ProductScreen> {
           Padding(
         padding: const EdgeInsets.all(8.0),
         child: Container(
-          height: 150,
+          height: 135,
           width: 400,
           decoration: BoxDecoration(
             color: Colors.white,
@@ -40,8 +40,8 @@ class _ProductScreenState extends State<ProductScreen> {
           child: ListView.builder(itemBuilder: (context, index) => Padding(
             padding: const EdgeInsets.all(10.0),
             child: Container(
-              height: 50,
-              width: 150,
+              height: 40,
+              width: 100,
               decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),color: Colors.grey.shade300),
               child: Column(
                 children: [
